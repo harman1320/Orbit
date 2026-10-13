@@ -1,0 +1,317 @@
+.dashboard {
+  min-height: 100vh;
+  background-color: #0d1117;
+  color: #f0f6fc;
+}
+
+/* DASHBOARD SECTIONS */
+
+.dashboard-section {
+  color: #f0f6fc;
+}
+
+.section-title {
+  color: #8b949e;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.section-heading {
+  color: #f0f6fc;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.section-subtitle {
+  color: #8b949e;
+  font-size: 13px;
+}
+
+/* REPOSITORY CARD */
+
+.github-repo-card {
+  background-color: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 6px;
+
+  color: #f0f6fc;
+
+  transition:
+    border-color 0.15s ease,
+    box-shadow 0.15s ease,
+    transform 0.15s ease;
+}
+
+.github-repo-card:hover {
+  border-color: #8b949e;
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+
+  transform: translateY(-1px);
+}
+
+/* REPOSITORY LINK */
+
+.repo-link {
+  text-decoration: none;
+}
+
+.repo-title {
+  color: #58a6ff;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  transition: color 0.15s ease;
+}
+
+.repo-title:hover {
+  color: #79c0ff;
+  text-decoration: underline;
+}
+
+/* REPOSITORY DESCRIPTION */
+
+.repo-description {
+  color: #8b949e;
+
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+/* REPOSITORY ICON */
+
+.repo-icon {
+  width: 30px;
+  height: 30px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background-color: #21262d;
+  border: 1px solid #30363d;
+
+  color: #f0f6fc;
+
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.repo-icon-large {
+  width: 38px;
+  height: 38px;
+
+  font-size: 14px;
+}
+
+/* PUBLIC / PRIVATE BADGE */
+
+.public-badge {
+  color: #8b949e;
+
+  background-color: transparent;
+
+  border: 1px solid #30363d;
+
+  border-radius: 20px;
+
+  font-size: 11px;
+  font-weight: 500;
+
+  padding: 4px 8px;
+}
+
+/* REPOSITORY CARD FOOTER */
+
+.repo-card-footer {
+  border-top: 1px solid #21262d;
+
+  display: flex;
+  align-items: center;
+
+  gap: 8px;
+}
+
+.github-badge {
+  background-color: #21262d;
+
+  color: #8b949e;
+
+  border: 1px solid #30363d;
+
+  font-weight: 500;
+
+  padding: 5px 9px;
+}
+
+/* SUGGESTED REPOSITORIES */
+
+.github-list-item {
+  background-color: transparent !important;
+
+  border: none !important;
+
+  border-bottom: 1px solid #21262d !important;
+
+  color: #f0f6fc;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  transition:
+    background-color 0.15s ease,
+    padding-left 0.15s ease;
+}
+
+.github-list-item:last-child {
+  border-bottom: none !important;
+}
+
+.github-list-item:hover {
+  background-color: #161b22 !important;
+
+  border-radius: 6px;
+
+  padding-left: 6px !important;
+}
+
+/* REPOSITORY NAME */
+
+.repo-name {
+  color: #f0f6fc;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  transition: color 0.15s ease;
+}
+
+.github-list-item:hover .repo-name {
+  color: #58a6ff;
+}
+
+/* EVENTS */
+
+.github-event-card {
+  background-color: #161b22;
+
+  border: 1px solid #30363d;
+
+  border-radius: 6px;
+
+  color: #f0f6fc;
+
+  transition:
+    border-color 0.15s ease,
+    background-color 0.15s ease;
+}
+
+.github-event-card:hover {
+  border-color: #484f58;
+
+  background-color: #1b2128;
+}
+
+.github-empty-card {
+  background-color: #161b22;
+
+  border: 1px solid #30363d;
+
+  border-radius: 6px;
+
+  color: #f0f6fc;
+}
+
+.empty-icon {
+  font-size: 28px;
+}
+
+.min-width-0 {
+  min-width: 0;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+  .dashboard .container-fluid {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  .github-repo-card:hover {
+    transform: none;
+  }
+}
+
+/* STAR REPOSITORY BUTTON */
+
+.repo-star-button {
+  width: 32px;
+  height: 32px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #8b949e;
+
+  background-color: transparent;
+
+  border: 1px solid #30363d;
+  border-radius: 6px;
+
+  transition:
+    color 0.15s ease,
+    background-color 0.15s ease,
+    border-color 0.15s ease;
+}
+
+.repo-star-button svg {
+  font-size: 19px;
+}
+
+.repo-star-button:hover {
+  color: #e3b341;
+  background-color: #21262d;
+  border-color: #8b949e;
+}
+
+.repo-star-button:active {
+  transform: scale(0.95);
+}
+
+.repo-status-dots {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+
+  display: inline-block;
+
+  border-radius: 50%;
+
+  opacity: 0.85;
+}
+
+.status-green {
+  background-color: #3fb950;
+}
+
+.status-yellow {
+  background-color: #d29922;
+}
+
+.status-red {
+  background-color: #f85149;
+}

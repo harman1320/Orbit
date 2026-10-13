@@ -1,0 +1,280 @@
+.repo-page {
+  background-color: #0d1117;
+  color: #f0f6fc;
+}
+
+.repo-header {
+  background-color: #0d1117;
+  border-color: #30363d !important;
+}
+
+.repo-header-icon {
+  color: #8b949e;
+  font-size: 20px !important;
+}
+
+.repo-owner {
+  color: #58a6ff;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.repo-separator {
+  color: #8b949e;
+  font-size: 15px;
+}
+
+.repo-header-name {
+  color: #f0f6fc;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.repo-public-badge {
+  margin-left: 6px;
+  padding: 3px 8px;
+  color: #8b949e;
+  border: 1px solid #30363d;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.repo-header-description {
+  margin-left: 28px;
+  color: #8b949e;
+  font-size: 13px;
+}
+
+
+/* Sidebar */
+
+.repo-sidebar {
+  overflow: hidden;
+  background-color: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 6px;
+}
+
+.repo-sidebar-header {
+  min-height: 48px;
+  padding: 0 15px;
+  color: #f0f6fc;
+  background-color: #161b22;
+  border-bottom: 1px solid #30363d;
+  font-size: 14px;
+}
+
+.repo-file-count {
+  min-width: 22px;
+  padding: 2px 7px;
+  color: #8b949e;
+  background-color: #21262d;
+  border: 1px solid #30363d;
+  border-radius: 12px;
+  text-align: center;
+  font-size: 11px;
+}
+
+
+/* File List */
+
+.repo-file-list {
+  max-height: calc(100vh - 190px);
+  overflow-y: auto;
+}
+
+.repo-file-item {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+
+  padding: 10px 14px;
+
+  color: #c9d1d9;
+  background-color: transparent;
+
+  border: none !important;
+  border-bottom: 1px solid #21262d !important;
+
+  text-align: left;
+  font-size: 13px;
+
+  transition:
+    background-color 0.15s ease,
+    color 0.15s ease;
+}
+
+.repo-file-item svg {
+  flex-shrink: 0;
+  color: #8b949e;
+  font-size: 17px;
+}
+
+.repo-file-item:hover {
+  color: #f0f6fc;
+  background-color: #21262d;
+}
+
+.repo-file-item:hover svg {
+  color: #c9d1d9;
+}
+
+.repo-file-item.active {
+  color: #f0f6fc;
+  background-color: #21262d;
+  box-shadow: inset 2px 0 0 #58a6ff;
+}
+
+.repo-file-item.active svg {
+  color: #58a6ff;
+}
+
+
+/* Empty Files */
+
+.repo-empty-files {
+  min-height: 150px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
+
+  color: #8b949e;
+  font-size: 13px;
+}
+
+.repo-empty-files svg {
+  font-size: 24px;
+}
+
+
+/* Code Card */
+
+.repo-code-card {
+  overflow: hidden;
+
+  background-color: #0d1117;
+  border: 1px solid #30363d;
+  border-radius: 6px;
+}
+
+.repo-code-header {
+  min-height: 48px;
+
+  padding: 0 15px;
+
+  background-color: #161b22;
+  border-bottom: 1px solid #30363d;
+}
+
+.repo-code-icon {
+  color: #8b949e;
+  font-size: 18px !important;
+}
+
+.repo-current-file {
+  color: #f0f6fc;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.repo-file-label {
+  color: #484f58;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+}
+
+
+/* Code Area */
+
+.repo-code-container {
+  overflow: auto;
+  max-height: calc(100vh - 190px);
+  background-color: #0d1117;
+}
+
+.repo-code-container pre {
+  border-radius: 0 !important;
+}
+
+
+/* Empty Code State */
+
+.repo-code-empty {
+  min-height: 500px;
+  color: #8b949e;
+  text-align: center;
+}
+
+.repo-code-empty svg {
+  margin-bottom: 12px;
+  color: #484f58;
+  font-size: 38px !important;
+}
+
+.repo-code-empty h6 {
+  color: #c9d1d9;
+  font-size: 14px;
+}
+
+.repo-code-empty p {
+  max-width: 360px;
+  color: #8b949e;
+  font-size: 13px;
+}
+
+
+/* Scrollbars */
+
+.repo-file-list::-webkit-scrollbar,
+.repo-code-container::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.repo-file-list::-webkit-scrollbar-track,
+.repo-code-container::-webkit-scrollbar-track {
+  background: #0d1117;
+}
+
+.repo-file-list::-webkit-scrollbar-thumb,
+.repo-code-container::-webkit-scrollbar-thumb {
+  background: #30363d;
+  border-radius: 10px;
+}
+
+.repo-file-list::-webkit-scrollbar-thumb:hover,
+.repo-code-container::-webkit-scrollbar-thumb:hover {
+  background: #484f58;
+}
+
+
+/* Responsive */
+
+@media (max-width: 767.98px) {
+  .repo-header {
+    padding-top: 5px;
+  }
+
+  .repo-header-description {
+    margin-left: 0;
+    margin-top: 8px;
+  }
+
+  .repo-file-list {
+    max-height: 250px;
+  }
+
+  .repo-code-container {
+    max-height: 70vh;
+  }
+
+  .repo-header-name {
+    font-size: 16px;
+  }
+}

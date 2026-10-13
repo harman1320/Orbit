@@ -1,0 +1,71 @@
+.orbit-home-navbar {
+  min-height: 64px;
+  background-color: #0d1117;
+  border-bottom: 1px solid #30363d;
+}
+
+.orbit-home-brand {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+
+  color: #f0f6fc;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.orbit-home-brand:hover {
+  color: #f0f6fc;
+}
+
+.orbit-home-logo {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.orbit-nav-link {
+  color: #8b949e !important;
+  font-size: 14px;
+  font-weight: 500;
+  transition:
+    color 0.15s ease,
+    background-color 0.15s ease;
+}
+
+.orbit-nav-link:hover,
+.orbit-nav-link.active {
+  color: #f0f6fc !important;
+}
+
+.orbit-signup-button {
+  padding: 7px 15px;
+
+  color: #f0f6fc;
+  background-color: #21262d;
+
+  border: 1px solid #30363d;
+  border-radius: 6px;
+
+  font-size: 14px;
+  font-weight: 500;
+
+  transition:
+    background-color 0.15s ease,
+    border-color 0.15s ease;
+}
+
+.orbit-signup-button:hover {
+  color: #f0f6fc;
+  background-color: #30363d;
+  border-color: #8b949e;
+}
+
+.orbit-navbar-toggler {
+  border-color: #30363d;
+}
+
+.orbit-navbar-toggler:focus {
+  box-shadow: none;
+}
